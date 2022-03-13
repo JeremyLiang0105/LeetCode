@@ -18,3 +18,20 @@ class Solution:
     
         # time complexity: O(2^t) where t is the target value
         # space complexity: O(n)
+        
+        '''
+        res = []
+        comb = []
+        def dfs(i, total):
+            if total == target:
+                res.append(comb.copy())
+                return
+            if total > target:
+                return
+            for j in range(i, len(candidates)):
+                comb.append(candidates[j])
+                dfs(j, total + candidates[j])
+                comb.pop()
+        dfs(0, 0)
+        return res
+        '''
