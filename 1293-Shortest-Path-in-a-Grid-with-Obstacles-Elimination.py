@@ -3,6 +3,7 @@ class Solution:
         m, n = len(grid), len(grid[0])
         visited = set()
         res = -1
+        lst = [[0, 1], [1, 0], [0, -1], [-1, 0]]
         
         q = deque()
         q.append([0, 0, k, 0])
@@ -17,7 +18,7 @@ class Solution:
                 if left <= 0:
                     continue
                 left -= 1
-            lst = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+
             for x, y in lst:
                 newR, newC = r + x, c + y
                 if 0 <= newR < m and 0 <= newC < n and (newR, newC, left) not in visited:
