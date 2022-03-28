@@ -14,3 +14,5 @@ class Solution:
             else:
                 return dfs(node.left, l, node.val) and dfs(node.right, node.val, r)
         return dfs(root, float('-Inf'), float('Inf'))
+    
+    # time complexity: O(n)
