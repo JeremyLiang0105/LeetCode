@@ -47,7 +47,7 @@ class Codec:
             return node
         return dfs()
       
-      # time complexity: O(n)
+      # time complexity: O(n) for both serializing and deserializing.
         
 
 # Your Codec object will be instantiated and called as such:
