@@ -15,7 +15,7 @@ class Solution:
                 return res
             
             if grid[r][c] == 1:
-                if left <= 0:
+                if left == 0:
                     continue
                 left -= 1
 
