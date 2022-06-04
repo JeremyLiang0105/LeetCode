@@ -13,5 +13,5 @@ class Solution:
         return abs(stones[0])
     
         
-        # time complexity: O(n)
+        # time complexity: O(nlogn)
         # space complexity: O(n)
