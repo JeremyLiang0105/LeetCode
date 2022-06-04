@@ -14,3 +14,6 @@ class Solution:
                 return curSum == targetSum
             return dfs(node.left, curSum) or dfs(node.right, curSum)
         return dfs(root, 0)
+   
+    # time complexity: O(n) where n is the number of nodes
+    # space compexity: O(h) -> O(logn) where h is the height of the tree
