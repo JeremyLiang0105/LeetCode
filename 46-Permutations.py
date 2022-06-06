@@ -20,3 +20,5 @@ class Solution:
                 
         dfs()
         return res
+    
+    # time complexity: O(n*n!)
