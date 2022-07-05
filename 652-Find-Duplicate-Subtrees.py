@@ -20,6 +20,6 @@ class Solution:
                 res.append(node)
             return path
         dfs(root)
-        print(lookup)
+        return res
     
     # time complexity: O(n^2)
